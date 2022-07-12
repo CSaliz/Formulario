@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Formulario HTML + CSS</title>
+</head>
+<body>
+<!-- TAG *Div* serve para dividir o código em partes-->
+    <div>
+
+        <h1 id="Título">Formulário em HTML e CSS</h1>
+        <h2 id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+ <!--TAG "FORM" usada para criação de formulários-->   
+    <form>
+        <!-- TAG "Fieldset" funciona como um agrupador de campos-->
+        <!-- TAG "required" faz com que o campo se torne obrigatório-->
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label>Nome</label> <!-- TAG "Label" Explicação do campo-->
+                <input type="text" name="Nome" id="Nome" required> 
+            </div>
+            <div class="campo">
+                <label>Sobrenome</label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        
+        <div class="campo">
+            <label>De qual lado da aplicação você desenvolve?</label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+        <div class="campo">
+            <label for="senioridade">Senioridade</label>
+            <select name="Senioridade" id="Senioridade">
+                <option selected disabled value="">Selecione a opção</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+        <div id="check">
+            <fieldset class="grupo">
+                <label>Selecione as tecnologias que utiliza</label><br><br>
+                <input type="checkbox" id="tecnologia1" name="Tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="Tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="Tecnologia3" value="JavaScript">
+                <label for="tecnologia3">JavaScript</label>
+            </fieldset>
+        </div>
+
+        <div class="campo">
+            <br>
+            <label">Conte um pouco da sua experiência</label>
+            <br>
+            <textarea name="experiência" id="experiência" cols="1" rows="10" style="width: 26em ;"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+
+
+    </form>
+    
+</body>
+</html>
